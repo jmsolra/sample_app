@@ -1,12 +1,4 @@
-
-<!DOCTYPE html>
-<html>
-  <head>
-    <title><%= yield(:title) %> | Ruby on Rails Tutorial Sample App</title>
-  </head>
-  <body>
-    <% if logged_in? %>
-     <div class="row">
+<div class="row">
   <aside class="col-md-4">
     <section class="user_info">
       <%= render 'shared/user_info' %>
@@ -20,8 +12,3 @@
       <%= render 'shared/feed' %>
     </div>
 </div>
-    <% else %>
-      <%= render 'inicio' %>
-    <% end %>
-  </body>
-</html>
